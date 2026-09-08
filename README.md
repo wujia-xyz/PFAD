@@ -86,7 +86,7 @@ Use `--dry-run` with `reproduce.py` to inspect the commands before execution. Th
 
 ## Results and artifacts
 
-The repository includes specimen-level results and the full acquisition summary in [`paper_results/`](paper_results). Versioned [release assets](https://github.com/wujia-xyz/PFAD/releases/tag/v1.0.0) provide:
+The repository includes specimen-level results and the full acquisition summary in [`paper_results/`](paper_results). Versioned [study artifacts](https://github.com/wujia-xyz/PFAD/releases/tag/v1.0.0) provide:
 
 - **Models:** 14 saved PFAD refits and 14 selected outer Set Transformer checkpoints, with their policies and fitting records.
 - **Original predictions:** the 42 frozen PFAD prediction archives used for the primary point and surface results.

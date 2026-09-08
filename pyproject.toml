@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pfad-ultrasound"
-version = "1.0.0"
+version = "1.0.1"
 description = "Privileged First-Arrival Distillation for CT-Free Bone Surface Reconstruction From Tracked Ultrasound"
 readme = "README.md"
 requires-python = ">=3.10"

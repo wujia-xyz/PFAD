@@ -1,0 +1,14 @@
+{
+  "figure": "PFAD overview",
+  "artwork": "assets/pfad_overview.png",
+  "dataset": "UltraBones100k",
+  "CT_example": "specimen01, training example",
+  "ultrasound_geometry_and_policy_example": "specimen07/fibula, held-out prediction",
+  "schematic_elements": [
+    "feature cells",
+    "geometric neighborhood patches"
+  ],
+  "meshing": "frozen acquisition-topology triangulation",
+  "training_only_branches": "CT supervision and policy selection; these are excluded from the ultrasound inference path",
+  "source": "Project figure provenance retained while the journal caption focuses on the method."
+}
