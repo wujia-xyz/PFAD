@@ -1,0 +1,3836 @@
+{
+  "candidate_retentions": [
+    0.85,
+    0.9,
+    0.95
+  ],
+  "candidate_scores": [
+    "anatomy",
+    "surface",
+    "joint",
+    "factor"
+  ],
+  "deployment_actions": {
+    "fibula": "selector_refined",
+    "foot": "selector_refined",
+    "tibia": "selector_refined"
+  },
+  "folds": [
+    {
+      "heldout_specimen": "specimen01",
+      "inner_folds": [
+        {
+          "final_loss": 0.17498057404284345,
+          "fold": 0,
+          "training_specimens": [
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen08",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.1726444188623677,
+          "fold": 1,
+          "training_specimens": [
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen09",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.16716405578411156,
+          "fold": 2,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen04",
+            "specimen07",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 0,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7193724909239821,
+            "mean_f1": 0.8992452077457267,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030832091412420805
+          },
+          {
+            "mean_balanced_accuracy": 0.6868325381422001,
+            "mean_f1": 0.9065673416460538,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03433507047283011
+          },
+          {
+            "mean_balanced_accuracy": 0.6243148176512432,
+            "mean_f1": 0.9057915710390396,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03660371935866813
+          },
+          {
+            "mean_balanced_accuracy": 0.7334327693613744,
+            "mean_f1": 0.901827176150404,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03380588450011966
+          },
+          {
+            "mean_balanced_accuracy": 0.6928495231265098,
+            "mean_f1": 0.9073006591406891,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03593269905710049
+          },
+          {
+            "mean_balanced_accuracy": 0.6253290576282855,
+            "mean_f1": 0.9053329810935813,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.037408128372765276
+          },
+          {
+            "mean_balanced_accuracy": 0.73342466906986,
+            "mean_f1": 0.9018969774115825,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03375922937839041
+          },
+          {
+            "mean_balanced_accuracy": 0.6929622660876842,
+            "mean_f1": 0.9073900905955495,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.035837532033959174
+          },
+          {
+            "mean_balanced_accuracy": 0.625961043554371,
+            "mean_f1": 0.905464137703626,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03750108173073611
+          },
+          {
+            "mean_balanced_accuracy": 0.7351891275813194,
+            "mean_f1": 0.9027072030808861,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.033207336626362396
+          },
+          {
+            "mean_balanced_accuracy": 0.6942606258529321,
+            "mean_f1": 0.9079564758731583,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.035661387764202156
+          },
+          {
+            "mean_balanced_accuracy": 0.6264606120337375,
+            "mean_f1": 0.9058807150341845,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.037173171065055674
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6942606258529321,
+          "mean_f1": 0.9079564758731583,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.035661387764202156
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen01_foot.npz",
+          "points": 16793,
+          "record_retained_fraction": [
+            0.900066181336863,
+            0.9000905914326388
+          ],
+          "retained_fraction": 0.9000774132078843,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen01"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen01_tibia.npz",
+          "points": 143556,
+          "record_retained_fraction": [
+            0.9000242777373149,
+            0.9000038079281063,
+            0.9000086760367864,
+            0.9000199401794616,
+            0.9000221287895552,
+            0.9000307952883209
+          ],
+          "retained_fraction": 0.9000181113990359,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen01"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen01_fibula.npz",
+          "points": 59435,
+          "record_retained_fraction": [
+            0.9000840414604538,
+            0.900039385584876,
+            0.9000048541332945,
+            0.9
+          ],
+          "retained_fraction": 0.9000252376545806,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen01"
+        }
+      ],
+      "training_specimens": [
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen02",
+      "inner_folds": [
+        {
+          "final_loss": 0.17498057404284345,
+          "fold": 0,
+          "training_specimens": [
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen05",
+            "specimen08",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.1654398834698194,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen09",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.1753807038504586,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen04",
+            "specimen07",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 1,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7214931363532382,
+            "mean_f1": 0.9009387363899399,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.02939238542364059
+          },
+          {
+            "mean_balanced_accuracy": 0.6857927063352408,
+            "mean_f1": 0.907155719802854,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.033188340002362295
+          },
+          {
+            "mean_balanced_accuracy": 0.6219966569677132,
+            "mean_f1": 0.905649340867638,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0363092467441105
+          },
+          {
+            "mean_balanced_accuracy": 0.7337304861539918,
+            "mean_f1": 0.9023473919085135,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03285102419951805
+          },
+          {
+            "mean_balanced_accuracy": 0.6917830347361043,
+            "mean_f1": 0.9073036092437425,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03527519507487519
+          },
+          {
+            "mean_balanced_accuracy": 0.6246042392247071,
+            "mean_f1": 0.905410983310629,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03719278823960001
+          },
+          {
+            "mean_balanced_accuracy": 0.7342056357153299,
+            "mean_f1": 0.9024890643787086,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03287231328050558
+          },
+          {
+            "mean_balanced_accuracy": 0.6917718240516199,
+            "mean_f1": 0.9073345334088353,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03528630855673713
+          },
+          {
+            "mean_balanced_accuracy": 0.6249095748427769,
+            "mean_f1": 0.9055182085986524,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03722057310487187
+          },
+          {
+            "mean_balanced_accuracy": 0.7351178090167511,
+            "mean_f1": 0.9034886507853842,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.031249059675979178
+          },
+          {
+            "mean_balanced_accuracy": 0.6936154245918978,
+            "mean_f1": 0.908342714480294,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0339700668372551
+          },
+          {
+            "mean_balanced_accuracy": 0.6246452547371637,
+            "mean_f1": 0.9058702381886119,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03660270988450083
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6936154245918978,
+          "mean_f1": 0.908342714480294,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.0339700668372551
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen02_foot.npz",
+          "points": 23067,
+          "record_retained_fraction": [
+            0.90004502476362,
+            0.9000215007525263,
+            0.9000281610813855
+          ],
+          "retained_fraction": 0.9000303463822777,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen02"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen02_tibia.npz",
+          "points": 81165,
+          "record_retained_fraction": [
+            0.9000400068583185,
+            0.900024823135162,
+            0.9000122309197651,
+            0.90002668326959,
+            0.9000450924395009
+          ],
+          "retained_fraction": 0.9000308014538286,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen02"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen02_fibula.npz",
+          "points": 55467,
+          "record_retained_fraction": [
+            0.9000347342827371,
+            0.9000301568154403,
+            0.9000589622641509,
+            0.9
+          ],
+          "retained_fraction": 0.9000306488542738,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen02"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen03",
+      "inner_folds": [
+        {
+          "final_loss": 0.17057203649973815,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen05",
+            "specimen08",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.1654398834698194,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen06",
+            "specimen09",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.1609016101932232,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen04",
+            "specimen07",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 2,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7332208703587063,
+            "mean_f1": 0.9048862556567282,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03007224348216124
+          },
+          {
+            "mean_balanced_accuracy": 0.693136198229852,
+            "mean_f1": 0.9100484618542145,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.034948095897315214
+          },
+          {
+            "mean_balanced_accuracy": 0.6270543370629688,
+            "mean_f1": 0.9088340802690537,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.038391743385470606
+          },
+          {
+            "mean_balanced_accuracy": 0.7462232470834606,
+            "mean_f1": 0.9064180114616781,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0325584261342287
+          },
+          {
+            "mean_balanced_accuracy": 0.7013451438142749,
+            "mean_f1": 0.9109020771319716,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036486118626792616
+          },
+          {
+            "mean_balanced_accuracy": 0.630295917505354,
+            "mean_f1": 0.9089760033593277,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03931889454046792
+          },
+          {
+            "mean_balanced_accuracy": 0.7464008275140662,
+            "mean_f1": 0.9065140403922753,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.032579657284628485
+          },
+          {
+            "mean_balanced_accuracy": 0.7011605285122197,
+            "mean_f1": 0.9109068550929206,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03650540745375426
+          },
+          {
+            "mean_balanced_accuracy": 0.6305839412901578,
+            "mean_f1": 0.9090521399411156,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03932723748344371
+          },
+          {
+            "mean_balanced_accuracy": 0.7477889855853272,
+            "mean_f1": 0.9075257855148423,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.031444617819274046
+          },
+          {
+            "mean_balanced_accuracy": 0.7015082018438858,
+            "mean_f1": 0.9114748672692679,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.035708084625568334
+          },
+          {
+            "mean_balanced_accuracy": 0.6299411737480208,
+            "mean_f1": 0.9092034266428077,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03891018662025556
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.7015082018438858,
+          "mean_f1": 0.9114748672692679,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.035708084625568334
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen03_foot.npz",
+          "points": 16527,
+          "record_retained_fraction": [
+            0.9000360446954223,
+            0.9001984689537851,
+            0.9001496685909771
+          ],
+          "retained_fraction": 0.900102861983421,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen03"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen03_tibia.npz",
+          "points": 58150,
+          "record_retained_fraction": [
+            0.9000179500987255,
+            0.9000641985876311,
+            0.9000279446695543,
+            0.900030525030525
+          ],
+          "retained_fraction": 0.9000343938091143,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen03"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen03_fibula.npz",
+          "points": 38154,
+          "record_retained_fraction": [
+            0.900072939460248,
+            0.9000156103652825,
+            0.9000230715988617
+          ],
+          "retained_fraction": 0.9000366934004298,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen03"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen04",
+      "inner_folds": [
+        {
+          "final_loss": 0.17699064686558913,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen05",
+            "specimen08",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.1747517753165577,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen06",
+            "specimen09",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.1609016101932232,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen07",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 3,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7192023062223154,
+            "mean_f1": 0.9075141712708056,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.026808898279917975
+          },
+          {
+            "mean_balanced_accuracy": 0.6823715151003016,
+            "mean_f1": 0.9137429572736894,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03232468633115673
+          },
+          {
+            "mean_balanced_accuracy": 0.6203945075712617,
+            "mean_f1": 0.9131367911847292,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03604029226447999
+          },
+          {
+            "mean_balanced_accuracy": 0.7391991519320178,
+            "mean_f1": 0.9105803698594349,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.029072727461852375
+          },
+          {
+            "mean_balanced_accuracy": 0.6934471819150638,
+            "mean_f1": 0.91526780327162,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03380706785247459
+          },
+          {
+            "mean_balanced_accuracy": 0.6239251006262657,
+            "mean_f1": 0.9133728930609817,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036992582793182245
+          },
+          {
+            "mean_balanced_accuracy": 0.7394582039698292,
+            "mean_f1": 0.9106876636693364,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.029081825378043373
+          },
+          {
+            "mean_balanced_accuracy": 0.6936129608474633,
+            "mean_f1": 0.9153117822194792,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03383555323014887
+          },
+          {
+            "mean_balanced_accuracy": 0.6239808609615812,
+            "mean_f1": 0.9133522298297928,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03699946659391777
+          },
+          {
+            "mean_balanced_accuracy": 0.7404166304220092,
+            "mean_f1": 0.9114873698090461,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.02787208230565746
+          },
+          {
+            "mean_balanced_accuracy": 0.6942306143032718,
+            "mean_f1": 0.9157934898487314,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03315083696061551
+          },
+          {
+            "mean_balanced_accuracy": 0.6239336503657456,
+            "mean_f1": 0.9135828256276929,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036520053805181786
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6942306143032718,
+          "mean_f1": 0.9157934898487314,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.03315083696061551
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen04_foot.npz",
+          "points": 15085,
+          "record_retained_fraction": [
+            0.9001166861143524,
+            0.9001416430594901,
+            0.9000609384521633
+          ],
+          "retained_fraction": 0.9000994365263507,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen04"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen04_tibia.npz",
+          "points": 47617,
+          "record_retained_fraction": [
+            0.9000330196466898,
+            0.9000385356454721,
+            0.9000574382538771,
+            0.9000165535507366
+          ],
+          "retained_fraction": 0.900035701535166,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen04"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen04_fibula.npz",
+          "points": 46728,
+          "record_retained_fraction": [
+            0.9000221312382428,
+            0.9000551040088166,
+            0.9000424448217318
+          ],
+          "retained_fraction": 0.9000385208012327,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen04"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen05",
+      "inner_folds": [
+        {
+          "final_loss": 0.17699064686558913,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen08",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.17212657727031622,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen06",
+            "specimen09",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.15428548183796809,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen07",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 4,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7201172081685827,
+            "mean_f1": 0.9018603829190409,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03163652233866348
+          },
+          {
+            "mean_balanced_accuracy": 0.6857060228446037,
+            "mean_f1": 0.9088401711656643,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036585077907225705
+          },
+          {
+            "mean_balanced_accuracy": 0.6255411762747263,
+            "mean_f1": 0.9090920989218862,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0394400805427598
+          },
+          {
+            "mean_balanced_accuracy": 0.739400167705494,
+            "mean_f1": 0.9047654090766736,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.033648874197229756
+          },
+          {
+            "mean_balanced_accuracy": 0.6975284926454565,
+            "mean_f1": 0.9103718173869808,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03787476249025653
+          },
+          {
+            "mean_balanced_accuracy": 0.6316897316824293,
+            "mean_f1": 0.9099292694421387,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03994959030537569
+          },
+          {
+            "mean_balanced_accuracy": 0.740376729239183,
+            "mean_f1": 0.9050528979269525,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.033725325370445584
+          },
+          {
+            "mean_balanced_accuracy": 0.6980590405291397,
+            "mean_f1": 0.9105441612588631,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03787719070664118
+          },
+          {
+            "mean_balanced_accuracy": 0.6322138549278455,
+            "mean_f1": 0.910021397387498,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03999142633255254
+          },
+          {
+            "mean_balanced_accuracy": 0.7398731560534204,
+            "mean_f1": 0.905282399002899,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03323038174259679
+          },
+          {
+            "mean_balanced_accuracy": 0.6974085544087961,
+            "mean_f1": 0.9106619492497345,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03757197524810923
+          },
+          {
+            "mean_balanced_accuracy": 0.6308581394636369,
+            "mean_f1": 0.9099008366126122,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03981145937231807
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6974085544087961,
+          "mean_f1": 0.9106619492497345,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.03757197524810923
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen05_foot.npz",
+          "points": 32639,
+          "record_retained_fraction": [
+            0.9000441891294741,
+            0.9,
+            0.9000304090010643
+          ],
+          "retained_fraction": 0.9000275743742149,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen05"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen05_tibia.npz",
+          "points": 51264,
+          "record_retained_fraction": [
+            0.9000236630383341,
+            0.9000214431221186,
+            0.900038201961034
+          ],
+          "retained_fraction": 0.9000273096129837,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen05"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen05_fibula.npz",
+          "points": 32709,
+          "record_retained_fraction": [
+            0.9000267546597699,
+            0.9000852353442561,
+            0.900064002925848
+          ],
+          "retained_fraction": 0.9000580879880156,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen05"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen06",
+      "inner_folds": [
+        {
+          "final_loss": 0.17912536229041467,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen08",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.17212657727031622,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen09",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.160052246064325,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen07",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 5,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7155902747770713,
+            "mean_f1": 0.9005997998526948,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03039763585069044
+          },
+          {
+            "mean_balanced_accuracy": 0.6823048308570231,
+            "mean_f1": 0.9078726842438477,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.035556490303974675
+          },
+          {
+            "mean_balanced_accuracy": 0.6233127419986562,
+            "mean_f1": 0.9083455975812099,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.039241312795029924
+          },
+          {
+            "mean_balanced_accuracy": 0.7382556656560068,
+            "mean_f1": 0.9044448401469662,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0339989722065761
+          },
+          {
+            "mean_balanced_accuracy": 0.6947986908794547,
+            "mean_f1": 0.9097808374492045,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.037535062547308894
+          },
+          {
+            "mean_balanced_accuracy": 0.6288799067993824,
+            "mean_f1": 0.9090710589706723,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.04022592406411021
+          },
+          {
+            "mean_balanced_accuracy": 0.7389059870915354,
+            "mean_f1": 0.9046139215039635,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03403107037124391
+          },
+          {
+            "mean_balanced_accuracy": 0.6952427260458589,
+            "mean_f1": 0.9099270607193445,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03753649547030137
+          },
+          {
+            "mean_balanced_accuracy": 0.6289278668853515,
+            "mean_f1": 0.9091218021324313,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0402208310319585
+          },
+          {
+            "mean_balanced_accuracy": 0.7378395307465391,
+            "mean_f1": 0.9048512587994593,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.032956380656986285
+          },
+          {
+            "mean_balanced_accuracy": 0.6931191554936842,
+            "mean_f1": 0.9098196171745087,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03659502725987413
+          },
+          {
+            "mean_balanced_accuracy": 0.6273852686849567,
+            "mean_f1": 0.9089961745394564,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03960379903218701
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6952427260458589,
+          "mean_f1": 0.9099270607193445,
+          "retention": 0.9,
+          "score": "joint",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.03753649547030137
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen06_foot.npz",
+          "points": 27267,
+          "record_retained_fraction": [
+            0.9000087558007179,
+            0.9000583600817041,
+            0.9000222419928826
+          ],
+          "retained_fraction": 0.9000256720577988,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen06"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen06_tibia.npz",
+          "points": 61760,
+          "record_retained_fraction": [
+            0.9000064016388195,
+            0.9000093536619587,
+            0.9000282748313608
+          ],
+          "retained_fraction": 0.9000161917098446,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen06"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen06_fibula.npz",
+          "points": 24601,
+          "record_retained_fraction": [
+            0.9000239177230328,
+            0.9000383975425573,
+            0.9000712081652029
+          ],
+          "retained_fraction": 0.9000447136295272,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen06"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen07",
+      "inner_folds": [
+        {
+          "final_loss": 0.17739107280835925,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen08",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.1704694688405372,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen09",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.160052246064325,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 6,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7151740117103521,
+            "mean_f1": 0.9001825653969683,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.02920873399938278
+          },
+          {
+            "mean_balanced_accuracy": 0.6783894289307065,
+            "mean_f1": 0.9060663563815947,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03228872403060308
+          },
+          {
+            "mean_balanced_accuracy": 0.618750996557091,
+            "mean_f1": 0.9054785466877091,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03586674297601874
+          },
+          {
+            "mean_balanced_accuracy": 0.7361332278654259,
+            "mean_f1": 0.9036666301291105,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03105794830467042
+          },
+          {
+            "mean_balanced_accuracy": 0.6908943723154854,
+            "mean_f1": 0.9076233026011514,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03382690586173544
+          },
+          {
+            "mean_balanced_accuracy": 0.6234808725849347,
+            "mean_f1": 0.9059921306057501,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036755855346521406
+          },
+          {
+            "mean_balanced_accuracy": 0.7364113262865067,
+            "mean_f1": 0.9037931271269647,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030954418584665057
+          },
+          {
+            "mean_balanced_accuracy": 0.6910512279533092,
+            "mean_f1": 0.9077101023819851,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03377209129295865
+          },
+          {
+            "mean_balanced_accuracy": 0.6235942901332826,
+            "mean_f1": 0.9060515857267261,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03672549860956104
+          },
+          {
+            "mean_balanced_accuracy": 0.7358513598697116,
+            "mean_f1": 0.904025195816183,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030296577673960656
+          },
+          {
+            "mean_balanced_accuracy": 0.6898996711451014,
+            "mean_f1": 0.9077825686736367,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03309629364029582
+          },
+          {
+            "mean_balanced_accuracy": 0.6229694699534019,
+            "mean_f1": 0.9061090522380252,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03620471752911741
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6898996711451014,
+          "mean_f1": 0.9077825686736367,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.03309629364029582
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen07_foot.npz",
+          "points": 31934,
+          "record_retained_fraction": [
+            0.9000771604938271,
+            0.9000663067159231,
+            0.9000817512943955
+          ],
+          "retained_fraction": 0.9000751550072024,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen07"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen07_tibia.npz",
+          "points": 40344,
+          "record_retained_fraction": [
+            0.9000689179875948,
+            0.9000262226301298,
+            0.9000200897341458
+          ],
+          "retained_fraction": 0.9000347015665279,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen07"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen07_fibula.npz",
+          "points": 49098,
+          "record_retained_fraction": [
+            0.9000183116645303,
+            0.9000476247172282,
+            0.9000439781365835
+          ],
+          "retained_fraction": 0.9000366613711352,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen07"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen08",
+      "inner_folds": [
+        {
+          "final_loss": 0.17739107280835925,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen07",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.16958296962756123,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen09",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.15805071657155403,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen09",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 7,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7220321736595076,
+            "mean_f1": 0.9017328887645859,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030606296418876806
+          },
+          {
+            "mean_balanced_accuracy": 0.685431485047551,
+            "mean_f1": 0.9082883575007756,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.034630189208325286
+          },
+          {
+            "mean_balanced_accuracy": 0.6221222225770053,
+            "mean_f1": 0.9073526542449412,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.037897259968894065
+          },
+          {
+            "mean_balanced_accuracy": 0.7387610147018541,
+            "mean_f1": 0.9041849610186861,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.032527031113806754
+          },
+          {
+            "mean_balanced_accuracy": 0.6948006493080559,
+            "mean_f1": 0.9092391633406323,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03611551877300415
+          },
+          {
+            "mean_balanced_accuracy": 0.6258108243872584,
+            "mean_f1": 0.9075217529312032,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03868418161137893
+          },
+          {
+            "mean_balanced_accuracy": 0.7387675679678259,
+            "mean_f1": 0.9042524628511985,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03249399941501449
+          },
+          {
+            "mean_balanced_accuracy": 0.6948625071006673,
+            "mean_f1": 0.9092832316441577,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03614904982773608
+          },
+          {
+            "mean_balanced_accuracy": 0.6261004940254349,
+            "mean_f1": 0.9076240099249522,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03868189054481898
+          },
+          {
+            "mean_balanced_accuracy": 0.7383192471733484,
+            "mean_f1": 0.9042522315498336,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03248977094613045
+          },
+          {
+            "mean_balanced_accuracy": 0.6937446790805293,
+            "mean_f1": 0.9092014149524883,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0358285215550446
+          },
+          {
+            "mean_balanced_accuracy": 0.6261276929110259,
+            "mean_f1": 0.9077985051078831,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03840767873956736
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6948625071006673,
+          "mean_f1": 0.9092832316441577,
+          "retention": 0.9,
+          "score": "joint",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.03614904982773608
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen08_foot.npz",
+          "points": 30234,
+          "record_retained_fraction": [
+            0.9000792236086353,
+            0.9000612048614147,
+            0.9001034601678354
+          ],
+          "retained_fraction": 0.9000793808295297,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen08"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen08_tibia.npz",
+          "points": 69829,
+          "record_retained_fraction": [
+            0.9000044324276406,
+            0.900034030968181,
+            0.9
+          ],
+          "retained_fraction": 0.9000128886279339,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen08"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen08_fibula.npz",
+          "points": 35422,
+          "record_retained_fraction": [
+            0.9000585921151754,
+            0.9,
+            0.9000388349514563
+          ],
+          "retained_fraction": 0.9000338772514257,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen08"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen09",
+      "inner_folds": [
+        {
+          "final_loss": 0.1787008428378028,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen07",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.16958296962756123,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen10",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen08",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.156237808039101,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen10",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 8,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7186884969885102,
+            "mean_f1": 0.900640341531231,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030230800382726405
+          },
+          {
+            "mean_balanced_accuracy": 0.683212728108207,
+            "mean_f1": 0.9073160531055084,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03508658939038986
+          },
+          {
+            "mean_balanced_accuracy": 0.6204078683876109,
+            "mean_f1": 0.9067890812373798,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03831575141240921
+          },
+          {
+            "mean_balanced_accuracy": 0.7326908557027612,
+            "mean_f1": 0.9023231467839857,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03254238501349521
+          },
+          {
+            "mean_balanced_accuracy": 0.6879243789252254,
+            "mean_f1": 0.9071177875608131,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03677784768598582
+          },
+          {
+            "mean_balanced_accuracy": 0.6219822940693702,
+            "mean_f1": 0.9063912304745279,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0390400372257539
+          },
+          {
+            "mean_balanced_accuracy": 0.7335824350663619,
+            "mean_f1": 0.9025933576142525,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03231403866450828
+          },
+          {
+            "mean_balanced_accuracy": 0.6884537853204937,
+            "mean_f1": 0.907321478008569,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036648238768676886
+          },
+          {
+            "mean_balanced_accuracy": 0.622551009851674,
+            "mean_f1": 0.9066030570589733,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.039005681258853515
+          },
+          {
+            "mean_balanced_accuracy": 0.7329301627632566,
+            "mean_f1": 0.9030101005925046,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.031824669259993846
+          },
+          {
+            "mean_balanced_accuracy": 0.6877770386666461,
+            "mean_f1": 0.9076497828282262,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03603614008807608
+          },
+          {
+            "mean_balanced_accuracy": 0.622596745428745,
+            "mean_f1": 0.9069608483202527,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03856484393946287
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6877770386666461,
+          "mean_f1": 0.9076497828282262,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.03603614008807608
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen09_foot.npz",
+          "points": 26186,
+          "record_retained_fraction": [
+            0.9000399307866365,
+            0.9,
+            0.9000261255769398
+          ],
+          "retained_fraction": 0.9000229130069503,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen09"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen09_tibia.npz",
+          "points": 82556,
+          "record_retained_fraction": [
+            0.9000299872554165,
+            0.9000234529433444,
+            0.9000038415735085
+          ],
+          "retained_fraction": 0.9000193807839527,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen09"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen09_fibula.npz",
+          "points": 30541,
+          "record_retained_fraction": [
+            0.9,
+            0.9000064263222158
+          ],
+          "retained_fraction": 0.900003274287024,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen09"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen10",
+      "inner_folds": [
+        {
+          "final_loss": 0.16284881243706065,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen07",
+            "specimen11",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.15816829493951978,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen11",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen08",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.156237808039101,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen11",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen09",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 9,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.719560403956246,
+            "mean_f1": 0.9026219809940573,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.031130129579477632
+          },
+          {
+            "mean_balanced_accuracy": 0.6833700309352964,
+            "mean_f1": 0.9094769472349573,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03590746693052222
+          },
+          {
+            "mean_balanced_accuracy": 0.62020030960261,
+            "mean_f1": 0.9095041340593434,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03865974183961878
+          },
+          {
+            "mean_balanced_accuracy": 0.7373705081452285,
+            "mean_f1": 0.9055745362979336,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03331450907650238
+          },
+          {
+            "mean_balanced_accuracy": 0.6924337402063164,
+            "mean_f1": 0.9106667127980725,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.037375036391010294
+          },
+          {
+            "mean_balanced_accuracy": 0.6241385785449117,
+            "mean_f1": 0.9099018819048977,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0393969807378816
+          },
+          {
+            "mean_balanced_accuracy": 0.7372635129689686,
+            "mean_f1": 0.9055633327557189,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.033260449803481446
+          },
+          {
+            "mean_balanced_accuracy": 0.6926098205104535,
+            "mean_f1": 0.9107163859120083,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03736461271561013
+          },
+          {
+            "mean_balanced_accuracy": 0.624406976932865,
+            "mean_f1": 0.9099307650343488,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03948753125948337
+          },
+          {
+            "mean_balanced_accuracy": 0.7370952330917239,
+            "mean_f1": 0.9059287898778402,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.032660744854503314
+          },
+          {
+            "mean_balanced_accuracy": 0.692174899976528,
+            "mean_f1": 0.9108376051955637,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036921061970376784
+          },
+          {
+            "mean_balanced_accuracy": 0.6242194288366956,
+            "mean_f1": 0.9099921871607363,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03909164722812528
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.692174899976528,
+          "mean_f1": 0.9108376051955637,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.036921061970376784
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen10_foot.npz",
+          "points": 8614,
+          "record_retained_fraction": [
+            0.900022416498543,
+            0.9000722369371539
+          ],
+          "retained_fraction": 0.9000464360343626,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen10"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen10_tibia.npz",
+          "points": 35040,
+          "record_retained_fraction": [
+            0.9,
+            0.9000107284626113,
+            0.9000892060660125
+          ],
+          "retained_fraction": 0.9000285388127854,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen10"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen10_fibula.npz",
+          "points": 27425,
+          "record_retained_fraction": [
+            0.9000581057524695,
+            0.9000624609618988,
+            0.9000457247370828
+          ],
+          "retained_fraction": 0.9000546946216955,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen10"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen11",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen11",
+      "inner_folds": [
+        {
+          "final_loss": 0.16284881243706065,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen07",
+            "specimen10",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.16053003876028707,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen08",
+            "specimen12"
+          ]
+        },
+        {
+          "final_loss": 0.1597808743979034,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen09",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 10,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.719307964049251,
+            "mean_f1": 0.902856003011808,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.031313304845049426
+          },
+          {
+            "mean_balanced_accuracy": 0.6872554358625567,
+            "mean_f1": 0.9109282781582362,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.034921612749232035
+          },
+          {
+            "mean_balanced_accuracy": 0.6249135886728292,
+            "mean_f1": 0.9110526563739941,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03749474701129412
+          },
+          {
+            "mean_balanced_accuracy": 0.7408282771776233,
+            "mean_f1": 0.9068625634223291,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03325672110898837
+          },
+          {
+            "mean_balanced_accuracy": 0.698248511190796,
+            "mean_f1": 0.9125947435843363,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03644659271533665
+          },
+          {
+            "mean_balanced_accuracy": 0.6298637415646373,
+            "mean_f1": 0.9116497596803268,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03815034945953604
+          },
+          {
+            "mean_balanced_accuracy": 0.7405242085738875,
+            "mean_f1": 0.9068518707615846,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.033209930872576676
+          },
+          {
+            "mean_balanced_accuracy": 0.6982411999264563,
+            "mean_f1": 0.9126154929817817,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036431861645383666
+          },
+          {
+            "mean_balanced_accuracy": 0.6303428218487552,
+            "mean_f1": 0.9117603496989092,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0381630366760526
+          },
+          {
+            "mean_balanced_accuracy": 0.7411634267612122,
+            "mean_f1": 0.9072051414523644,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.033382939829434015
+          },
+          {
+            "mean_balanced_accuracy": 0.6991462674208857,
+            "mean_f1": 0.9129811760179096,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03627385498494611
+          },
+          {
+            "mean_balanced_accuracy": 0.6303263377967551,
+            "mean_f1": 0.9117482808748557,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03820104675759291
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6991462674208857,
+          "mean_f1": 0.9129811760179096,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.03627385498494611
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen11_foot.npz",
+          "points": 10188,
+          "record_retained_fraction": [
+            0.9002923026956804,
+            0.9,
+            0.900185605279439
+          ],
+          "retained_fraction": 0.9001766784452296,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen11"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen11_tibia.npz",
+          "points": 23183,
+          "record_retained_fraction": [
+            0.9000638977635783,
+            0.9000825763831544,
+            0.9000247157686604
+          ],
+          "retained_fraction": 0.9000560755726179,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen11"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen11_fibula.npz",
+          "points": 24664,
+          "record_retained_fraction": [
+            0.9000431313349149,
+            0.9000131216375804,
+            0.9001158450250998
+          ],
+          "retained_fraction": 0.9000567628932857,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen11"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen12",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen12",
+      "inner_folds": [
+        {
+          "final_loss": 0.16968684441908788,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen07",
+            "specimen10",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.16053003876028707,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen13",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen08",
+            "specimen11"
+          ]
+        },
+        {
+          "final_loss": 0.16192462117075565,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen09",
+            "specimen13"
+          ]
+        }
+      ],
+      "outer_fold": 11,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7265663343038627,
+            "mean_f1": 0.9032457920109388,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.032259287479227614
+          },
+          {
+            "mean_balanced_accuracy": 0.692692621694046,
+            "mean_f1": 0.9103589618151398,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03611627427374981
+          },
+          {
+            "mean_balanced_accuracy": 0.6284992306477318,
+            "mean_f1": 0.9095708201167454,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03890717943462667
+          },
+          {
+            "mean_balanced_accuracy": 0.746418584215492,
+            "mean_f1": 0.906263418689423,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0353043013829459
+          },
+          {
+            "mean_balanced_accuracy": 0.7030742615097945,
+            "mean_f1": 0.9117718520030146,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.038365045186430136
+          },
+          {
+            "mean_balanced_accuracy": 0.6327244579047364,
+            "mean_f1": 0.9098905505598013,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03997328663828761
+          },
+          {
+            "mean_balanced_accuracy": 0.7463718948060787,
+            "mean_f1": 0.9063392136786627,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03526184618195707
+          },
+          {
+            "mean_balanced_accuracy": 0.7030689278528987,
+            "mean_f1": 0.9118381780849287,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03829241284122952
+          },
+          {
+            "mean_balanced_accuracy": 0.63271384004359,
+            "mean_f1": 0.9099209535308238,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03992100579978276
+          },
+          {
+            "mean_balanced_accuracy": 0.7455354286524242,
+            "mean_f1": 0.9064555007011097,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03517532251985223
+          },
+          {
+            "mean_balanced_accuracy": 0.7023854544136534,
+            "mean_f1": 0.9120050962230716,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03781500322941906
+          },
+          {
+            "mean_balanced_accuracy": 0.6321226503824688,
+            "mean_f1": 0.9099965520427252,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03961571331341103
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.7023854544136534,
+          "mean_f1": 0.9120050962230716,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.03781500322941906
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen12_foot.npz",
+          "points": 9120,
+          "record_retained_fraction": [
+            0.9000396667988894,
+            0.9,
+            0.90024868748273
+          ],
+          "retained_fraction": 0.900109649122807,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen12"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen12_tibia.npz",
+          "points": 18366,
+          "record_retained_fraction": [
+            0.9001497753369945,
+            0.9000674308833446,
+            0.9000404694455686
+          ],
+          "retained_fraction": 0.9000871174997278,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen12"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen12_fibula.npz",
+          "points": 27633,
+          "record_retained_fraction": [
+            0.900014639145074,
+            0.900085306035402,
+            0.9000350140056023
+          ],
+          "retained_fraction": 0.9000470451995802,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen12"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen13",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen13",
+      "inner_folds": [
+        {
+          "final_loss": 0.17281537454530949,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen07",
+            "specimen10",
+            "specimen14"
+          ]
+        },
+        {
+          "final_loss": 0.159612196812513,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen08",
+            "specimen11"
+          ]
+        },
+        {
+          "final_loss": 0.16192462117075565,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen14"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen09",
+            "specimen12"
+          ]
+        }
+      ],
+      "outer_fold": 12,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7264720434896509,
+            "mean_f1": 0.9075044368652314,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.026988113854450574
+          },
+          {
+            "mean_balanced_accuracy": 0.6928860626600559,
+            "mean_f1": 0.9157437215855428,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.02815228869532058
+          },
+          {
+            "mean_balanced_accuracy": 0.6298289678105722,
+            "mean_f1": 0.9158615828159827,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.029575355621446735
+          },
+          {
+            "mean_balanced_accuracy": 0.7476494012260333,
+            "mean_f1": 0.9114037557426123,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.02868328302699519
+          },
+          {
+            "mean_balanced_accuracy": 0.706352983508321,
+            "mean_f1": 0.9180550720366382,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.029627636562815442
+          },
+          {
+            "mean_balanced_accuracy": 0.6342602389907347,
+            "mean_f1": 0.9164060227454799,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030232686144794546
+          },
+          {
+            "mean_balanced_accuracy": 0.7481843699813889,
+            "mean_f1": 0.9114989183562281,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.028731938726208717
+          },
+          {
+            "mean_balanced_accuracy": 0.7069031383746942,
+            "mean_f1": 0.9182074500458801,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.029572886174689537
+          },
+          {
+            "mean_balanced_accuracy": 0.6341543435068797,
+            "mean_f1": 0.9164083420509649,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030228495980078877
+          },
+          {
+            "mean_balanced_accuracy": 0.7477702477829484,
+            "mean_f1": 0.9121014679096571,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.028206698107570413
+          },
+          {
+            "mean_balanced_accuracy": 0.7043449455965303,
+            "mean_f1": 0.9180114909408648,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.02940829054829986
+          },
+          {
+            "mean_balanced_accuracy": 0.6326723478392217,
+            "mean_f1": 0.9162582684715299,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030169168340740824
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.7069031383746942,
+          "mean_f1": 0.9182074500458801,
+          "retention": 0.9,
+          "score": "joint",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.029572886174689537
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen13_foot.npz",
+          "points": 8055,
+          "record_retained_fraction": [
+            0.9004224502112251,
+            0.900511654349062,
+            0.9001907183725365,
+            0.9001956947162426
+          ],
+          "retained_fraction": 0.900310366232154,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen13"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen13_tibia.npz",
+          "points": 42866,
+          "record_retained_fraction": [
+            0.9000373393076225,
+            0.9000437445319335,
+            0.9000333889816361
+          ],
+          "retained_fraction": 0.900037325619372,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen13"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen13_fibula.npz",
+          "points": 37704,
+          "record_retained_fraction": [
+            0.9000262858144221,
+            0.9000492368291482,
+            0.9000354484225452
+          ],
+          "retained_fraction": 0.90003713133885,
+          "retention": 0.9,
+          "score": "joint",
+          "specimen": "specimen13"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen14"
+      ]
+    },
+    {
+      "heldout_specimen": "specimen14",
+      "inner_folds": [
+        {
+          "final_loss": 0.17281537454530949,
+          "fold": 0,
+          "training_specimens": [
+            "specimen02",
+            "specimen03",
+            "specimen05",
+            "specimen06",
+            "specimen08",
+            "specimen09",
+            "specimen11",
+            "specimen12"
+          ],
+          "validation_specimens": [
+            "specimen01",
+            "specimen04",
+            "specimen07",
+            "specimen10",
+            "specimen13"
+          ]
+        },
+        {
+          "final_loss": 0.16641358046477087,
+          "fold": 1,
+          "training_specimens": [
+            "specimen01",
+            "specimen03",
+            "specimen04",
+            "specimen06",
+            "specimen07",
+            "specimen09",
+            "specimen10",
+            "specimen12",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen02",
+            "specimen05",
+            "specimen08",
+            "specimen11"
+          ]
+        },
+        {
+          "final_loss": 0.16533466409251807,
+          "fold": 2,
+          "training_specimens": [
+            "specimen01",
+            "specimen02",
+            "specimen04",
+            "specimen05",
+            "specimen07",
+            "specimen08",
+            "specimen10",
+            "specimen11",
+            "specimen13"
+          ],
+          "validation_specimens": [
+            "specimen03",
+            "specimen06",
+            "specimen09",
+            "specimen12"
+          ]
+        }
+      ],
+      "outer_fold": 13,
+      "policy_selection": {
+        "candidate_retentions": [
+          0.85,
+          0.9,
+          0.95
+        ],
+        "candidate_scores": [
+          "anatomy",
+          "surface",
+          "joint",
+          "factor"
+        ],
+        "candidates": [
+          {
+            "mean_balanced_accuracy": 0.7180186645108633,
+            "mean_f1": 0.9016400904524293,
+            "retention": 0.85,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.030727073399426184
+          },
+          {
+            "mean_balanced_accuracy": 0.682873741425949,
+            "mean_f1": 0.9080847771227505,
+            "retention": 0.9,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.035405685164383666
+          },
+          {
+            "mean_balanced_accuracy": 0.6220144674665249,
+            "mean_f1": 0.9072764429442659,
+            "retention": 0.95,
+            "score": "anatomy",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03796758791100624
+          },
+          {
+            "mean_balanced_accuracy": 0.7367760465587991,
+            "mean_f1": 0.9049112834803041,
+            "retention": 0.85,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.034348561604178214
+          },
+          {
+            "mean_balanced_accuracy": 0.6935422565586105,
+            "mean_f1": 0.9096531714650953,
+            "retention": 0.9,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03751518287153051
+          },
+          {
+            "mean_balanced_accuracy": 0.6241348966171412,
+            "mean_f1": 0.9071339423702761,
+            "retention": 0.95,
+            "score": "surface",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.039079207697245766
+          },
+          {
+            "mean_balanced_accuracy": 0.7370293319818104,
+            "mean_f1": 0.9049921894914567,
+            "retention": 0.85,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.034289504762659205
+          },
+          {
+            "mean_balanced_accuracy": 0.6936160355694267,
+            "mean_f1": 0.9097207189155742,
+            "retention": 0.9,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03744259612009917
+          },
+          {
+            "mean_balanced_accuracy": 0.6242459055441733,
+            "mean_f1": 0.9071967333612404,
+            "retention": 0.95,
+            "score": "joint",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.03904120230655865
+          },
+          {
+            "mean_balanced_accuracy": 0.7362820269255698,
+            "mean_f1": 0.9053148704843222,
+            "retention": 0.85,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.033177399361111574
+          },
+          {
+            "mean_balanced_accuracy": 0.6921838744560719,
+            "mean_f1": 0.9098705690206214,
+            "retention": 0.9,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.036469344019608614
+          },
+          {
+            "mean_balanced_accuracy": 0.623761782337168,
+            "mean_f1": 0.9073613969072061,
+            "retention": 0.95,
+            "score": "factor",
+            "selection_objective": "specimen_macro_joint_label_f1",
+            "specimens": 13,
+            "standard_deviation_f1": 0.0385092960894333
+          }
+        ],
+        "chosen": {
+          "mean_balanced_accuracy": 0.6921838744560719,
+          "mean_f1": 0.9098705690206214,
+          "retention": 0.9,
+          "score": "factor",
+          "selection_objective": "specimen_macro_joint_label_f1",
+          "specimens": 13,
+          "standard_deviation_f1": 0.036469344019608614
+        },
+        "heldout_labels_used": false
+      },
+      "predictions": [
+        {
+          "anatomy": "foot",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen14_foot.npz",
+          "points": 48326,
+          "record_retained_fraction": [
+            0.9000801496126102,
+            0.9000108330625067,
+            0.9000152415790276,
+            0.9000271296798698
+          ],
+          "retained_fraction": 0.9000331084716302,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen14"
+        },
+        {
+          "anatomy": "tibia",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen14_tibia.npz",
+          "points": 66304,
+          "record_retained_fraction": [
+            0.900014256522359,
+            0.9000090081974597,
+            0.9000390303135435
+          ],
+          "retained_fraction": 0.9000211148648649,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen14"
+        },
+        {
+          "anatomy": "fibula",
+          "deployment_action": "selector_refined",
+          "heldout_CT_used": false,
+          "heldout_teacher_label_loaded": false,
+          "output": "results/first_arrival_refinement/rebuild_v2/selector_attentive_loocv/nested_policy/specimen14_fibula.npz",
+          "points": 32346,
+          "record_retained_fraction": [
+            0.9000194137060765,
+            0.9000139256370979,
+            0.9000404149265796,
+            0.9
+          ],
+          "retained_fraction": 0.9000185494342423,
+          "retention": 0.9,
+          "score": "factor",
+          "specimen": "specimen14"
+        }
+      ],
+      "training_specimens": [
+        "specimen01",
+        "specimen02",
+        "specimen03",
+        "specimen04",
+        "specimen05",
+        "specimen06",
+        "specimen07",
+        "specimen08",
+        "specimen09",
+        "specimen10",
+        "specimen11",
+        "specimen12",
+        "specimen13"
+      ]
+    }
+  ],
+  "heldout_CT_used_before_prediction_freeze": false,
+  "heldout_teacher_labels_loaded": false,
+  "inner_folds": 3,
+  "interpretation": "outer-held-out PFAD predictions with score and retention selected only from specimen-disjoint inner predictions on the other 13 specimens",
+  "candidate_minimum_retention": 0.85,
+  "outer_folds": 14,
+  "policy_selection_objective": "specimen_macro_joint_label_f1",
+  "record_ranking_weight": 0.0,
+  "specimens": [
+    "specimen01",
+    "specimen02",
+    "specimen03",
+    "specimen04",
+    "specimen05",
+    "specimen06",
+    "specimen07",
+    "specimen08",
+    "specimen09",
+    "specimen10",
+    "specimen11",
+    "specimen12",
+    "specimen13",
+    "specimen14"
+  ],
+  "status": "nested_specimen_out_of_fold_predictions_frozen",
+  "student_variant": "attentive_set",
+  "teacher_target": "soft"
+}

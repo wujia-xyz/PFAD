@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/juho-lee/set_transformer",
+  "commit": "73432c640ac78140496d6738416c54d32c686d65",
+  "retrieved_on": "2026-09-08",
+  "files": {
+    "modules.py": {
+      "url": "https://raw.githubusercontent.com/juho-lee/set_transformer/73432c640ac78140496d6738416c54d32c686d65/modules.py",
+      "sha256": "26c11c9f18209cd2ddcf52073a28b0052b356673ab356a1a5bf8ec41e9c95787"
+    },
+    "models.py": {
+      "url": "https://raw.githubusercontent.com/juho-lee/set_transformer/73432c640ac78140496d6738416c54d32c686d65/models.py",
+      "sha256": "f7bd586152f2d69dc7d4d827fdb5e5c5534d332ee4595dbb95df44abe3ae92c6"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/juho-lee/set_transformer/73432c640ac78140496d6738416c54d32c686d65/LICENSE",
+      "sha256": "4b288f2e6078720cef1d81b5e8eb83a36697a6365526b52902516cf056bc6dab"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/juho-lee/set_transformer/73432c640ac78140496d6738416c54d32c686d65/README.md",
+      "sha256": "38c45aafb0b9e991d8bd2d5cc68ecc5d9bd8cb016aa7d08c9bf5a711bf3f86bf"
+    }
+  },
+  "license": "MIT"
+}

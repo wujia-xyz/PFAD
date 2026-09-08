@@ -1,0 +1,99 @@
+{
+  "status": "frozen_before_registration_outcomes",
+  "study": "Retrospective, complete-cohort solver sensitivity of frozen PFAD support selection",
+  "date": "2026-09-06",
+  "independent_unit": "specimen",
+  "cohort": "all 14 UltraBones100k specimens, foot/tibia/fibula, 42 cases",
+  "inputs": "all frozen query candidates; no CT-derived visibility or ROI filtering",
+  "methods": [
+    "raw",
+    "random_matched_refined",
+    "geometry_matched_refined",
+    "pfad_refined"
+  ],
+  "selection": "random/geometric controls match PFAD retained count separately within every record; all selected controls use the same frozen bounded correction",
+  "registration_target": "complete requested-anatomy CT mesh, available only to downstream registration/evaluation after selection is frozen",
+  "target_samples": 80000,
+  "evaluation_target_samples": 4096,
+  "initial_misalignment_levels": [
+    [
+      5,
+      5
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      20,
+      20
+    ]
+  ],
+  "level_units": [
+    "rotation magnitude degrees around a random unit axis",
+    "translation magnitude mm in a random unit direction"
+  ],
+  "starts_per_level": 5,
+  "aligned_start_diagnostic": true,
+  "primary_aggregation": "exclude aligned-start diagnostic; average starts and levels within each case, anatomies within each specimen, then report 14 paired specimen values",
+  "seed": 20260906,
+  "solver": "Open3D 0.19.0 standard point-to-point and point-to-plane least-squares ICP; Huber outcomes imported unchanged",
+  "voxel_sizes_mm": [
+    2.0,
+    1.0,
+    0.5
+  ],
+  "max_correspondence_mm": [
+    30.0,
+    15.0,
+    5.0
+  ],
+  "iterations": [
+    50,
+    30,
+    20
+  ],
+  "huber_k_mm": 2.0,
+  "maximum_source_points_per_scale": 6000,
+  "relative_fitness_tolerance": 1e-06,
+  "relative_rmse_tolerance": 1e-06,
+  "primary_endpoints": [
+    "virtual_target_rms_displacement_mm",
+    "registration_recall"
+  ],
+  "secondary_endpoints": [
+    "rotation_error_deg",
+    "translation_error_mm",
+    "registration_only_seconds"
+  ],
+  "success_criterion": "translation error <4 mm AND rotation error <5 degrees; computational benchmark threshold, not clinical acceptability",
+  "reference_basis": "known imposed transform composed with the released CT-US alignment; no independent surgical fiducials were found",
+  "reference_prior_art": "https://github.com/luohwu/NeuralBoneReg-implementation (uses UltraBones100k and synthetic rigid perturbation; our local-initialization protocol is distinct and results will not be compared across protocols)",
+  "statistics": "Same specimen aggregation and bootstrap; exploratory Wilcoxon tests with Holm over all 3 backends x 3 baselines x 2 original endpoints; no backend or endpoint selected for significance",
+  "not_claimed": [
+    "clinical navigation TRE",
+    "prospective validation",
+    "new-scanner or acquisition generalization",
+    "whole-workflow CT-free operation",
+    "registration state of the art",
+    "full PFAD end-to-end runtime"
+  ],
+  "no_adaptive_tuning": true,
+  "retain_all_outcomes": true,
+  "stage": "development sensitivity; not new external confirmation",
+  "created_utc": "2026-09-06T14:45:10.250009+00:00",
+  "original_protocol_path": "artifacts/pfad_registration_application_20260906/protocol.json",
+  "original_protocol_sha256": "06a4d2f376514eaca14fc4dab1b723d2af99f1586a00db1783ca3ec76f28d81f",
+  "original_outcome_known": true,
+  "added_backends": [
+    "point_to_point_l2",
+    "point_to_plane_l2"
+  ],
+  "reported_backends": [
+    "point_to_point_l2",
+    "point_to_plane_l2",
+    "point_to_plane_huber"
+  ],
+  "rationale": "Aligned-start drift and strong case heterogeneity in the completed Huber experiment motivate checking objective dependence. Both standard least-squares ICP objectives are included; all settings, cohorts, inputs, starts and endpoints are unchanged.",
+  "backend_selection": "none; report every backend including previous Huber results"
+}

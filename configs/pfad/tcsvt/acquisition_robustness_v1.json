@@ -1,0 +1,22 @@
+{
+  "study": "pfad_tcsvt_acquisition_robustness_v1",
+  "registered_on": "2026-09-08",
+  "design": "paired frozen-model acquisition sensitivity on every original specimen-anatomy case",
+  "training_config": "configs/pfad/tcsvt/learning_comparator_v1.json",
+  "models": ["raw", "cross_sweep_nearest", "pfad", "set_transformer"],
+  "model_and_policy_reselection_under_perturbation": false,
+  "independent_unit": "specimen",
+  "replicates": 3,
+  "seed": 20260908,
+  "sweep_reduction": {"retained_fractions": [0.75, 0.5], "rounding": "ceil", "minimum_records": 2, "shared_nested_random_record_order": true, "affects_queries_and_sources": true},
+  "frame_thinning": {"strides": [2, 4], "replicates": "all distinct phases for each stride", "phase": "phase index; same phase within all records of each case", "affects_queries_and_sources": true, "original_frame_indices_preserved": true},
+  "pose_error": {"rotation_angle_deg": [0.5, 1.0, 2.0], "translation_norm_mm": [0.5, 1.0, 2.0], "paired_levels": true, "unit": "one independent rigid error per record", "rotation_pivot": "record unperturbed query-point centroid", "affects_query_and_source_rays": true, "depth_and_confidence_unchanged": true},
+  "reference": "fixed CT mesh and ray-visible intersections from the unperturbed complete acquisition; held-out CT used only after prediction freeze",
+  "geometry": "recompute source neighborhoods, plane evidence, query-context normalization and bounded correction from available perturbed ultrasound rays",
+  "primary_representation": "all deployed selected points; no held-out CT filtering",
+  "primary_endpoints": ["chamfer_l1_mm", "hd95_mm", "fscore_1mm", "normal_consistency"],
+  "secondary_endpoints": ["precision_1mm", "coverage_1mm", "retained_points"],
+  "aggregation": "average replicates within specimen-anatomy-condition, then equal anatomy averaging, then 14 specimens",
+  "statistical_family": "PFAD versus each of the other three methods, seven changed conditions, four primary endpoints; 84 paired tests with Holm adjustment",
+  "interpretation": "sensitivity to explicitly imposed retrospective acquisition changes, not new scanners, operators, clinical navigation, or acquisition validation"
+}
