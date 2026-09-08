@@ -1,0 +1,101 @@
+{
+  "status": "frozen_before_adaptive_retention_outcomes",
+  "study": "Nested training-only application retention for frozen PFAD scores",
+  "date": "2026-09-06",
+  "independent_unit": "specimen",
+  "cohort": "all 14 UltraBones100k specimens, foot/tibia/fibula, 42 cases",
+  "inputs": "all frozen query candidates; no CT-derived visibility or ROI filtering",
+  "methods": [
+    "raw",
+    "all_refined",
+    "random_policy",
+    "geometry_policy",
+    "pfad_policy"
+  ],
+  "selection": "Each method independently chooses one global per-record retention using the other 13 specimens. Exactly ceil(f*n) or at least 3 points per record, capped at n; ties resolved by original index. All methods use the same bounded correction.",
+  "registration_target": "complete requested-anatomy CT mesh, available only to downstream registration/evaluation after selection is frozen",
+  "target_samples": 80000,
+  "evaluation_target_samples": 4096,
+  "initial_misalignment_levels": [
+    [
+      5,
+      5
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      20,
+      20
+    ]
+  ],
+  "level_units": [
+    "rotation magnitude degrees around a random unit axis",
+    "translation magnitude mm in a random unit direction"
+  ],
+  "starts_per_level": 5,
+  "aligned_start_diagnostic": true,
+  "primary_aggregation": "exclude aligned-start diagnostic; average starts and levels within each case, anatomies within each specimen, then report 14 paired specimen values",
+  "seed": 20260906,
+  "solver": "Open3D multiscale point-to-plane ICP with Huber loss, fixed for all methods",
+  "voxel_sizes_mm": [
+    2.0,
+    1.0,
+    0.5
+  ],
+  "max_correspondence_mm": [
+    30.0,
+    15.0,
+    5.0
+  ],
+  "iterations": [
+    50,
+    30,
+    20
+  ],
+  "huber_k_mm": 2.0,
+  "maximum_source_points_per_scale": 6000,
+  "relative_fitness_tolerance": 1e-06,
+  "relative_rmse_tolerance": 1e-06,
+  "primary_endpoints": [
+    "virtual_target_rms_displacement_mm",
+    "registration_recall"
+  ],
+  "secondary_endpoints": [
+    "rotation_error_deg",
+    "translation_error_mm",
+    "registration_only_seconds"
+  ],
+  "success_criterion": "translation error <4 mm AND rotation error <5 degrees; computational benchmark threshold, not clinical acceptability",
+  "reference_basis": "known imposed transform composed with the released CT-US alignment; no independent surgical fiducials were found",
+  "reference_prior_art": "https://github.com/luohwu/NeuralBoneReg-implementation (uses UltraBones100k and synthetic rigid perturbation; our local-initialization protocol is distinct and results will not be compared across protocols)",
+  "statistics": "14 paired specimen means; 100000 specimen bootstrap resamples; two-sided Wilcoxon; Holm over 4 baselines x 2 original endpoints. Exploratory development p values, not external confirmation.",
+  "not_claimed": [
+    "clinical navigation TRE",
+    "external validation",
+    "optimized registration algorithm",
+    "unchanged reconstruction retention policy",
+    "guaranteed positive outcome"
+  ],
+  "no_adaptive_tuning": true,
+  "retain_all_outcomes": true,
+  "created_utc": "2026-09-06T14:52:33.053192+00:00",
+  "stage": "retrospective nested development; all 14 specimens previously inspected in reconstruction and application diagnostics",
+  "rationale": "The reconstruction policy retains 90 percent to optimize candidate F1. This experiment selects retention for the downstream alignment objective without changing the trained scoring model or robust registration backend.",
+  "ranking": "PFAD anatomy probability times surface probability, fixed before results; geometry negative cross-sweep nearest distance; random seeded uniform rank",
+  "retention_candidates": [
+    0.5,
+    0.7,
+    0.9,
+    1.0
+  ],
+  "policy_objective": "minimum mean virtual target RMS displacement, starts within anatomy within specimen; ties prefer larger retention",
+  "outer_score_model": "reuse frozen 12-epoch seed-17 13-specimen outer models via saved head probabilities; no held-out fitting",
+  "inner_score_model": "three specimen-disjoint folds on the 13 outer-training specimens only; attentive_set soft teacher, epochs12 batch8192 learning_rate0.001 seed17; all three head losses unchanged",
+  "inner_starts": "draw0 from each of the three original perturbation levels; 3 starts per anatomy; controls can be cached because they do not use a trained score",
+  "outer_starts": "all original 15 perturbations and aligned diagnostic; policies saved before any selected-policy outer registration",
+  "independent_comparators": true,
+  "model_selection_boundary": "assert outer specimen absent from inner training, validation, and policy aggregation; validate input and output hashes on resume",
+  "physical_gpu": 1
+}

@@ -1,0 +1,1044 @@
+{
+  "status": "complete",
+  "specimens": 14,
+  "cases": 42,
+  "rows": 3360,
+  "primary_rows": 3150,
+  "methods": [
+    "raw",
+    "all_refined",
+    "random_policy",
+    "geometry_policy",
+    "pfad_policy"
+  ],
+  "proposed": "pfad_policy",
+  "summary": {
+    "raw": {
+      "virtual_target_rms_displacement_mm": {
+        "mean": 7.283450979185695,
+        "sd": 5.801868858026825
+      },
+      "registration_recall": {
+        "mean": 0.7571428571428572,
+        "sd": 0.21144180769415347
+      },
+      "rotation_error_deg": {
+        "mean": 5.573987263156987,
+        "sd": 6.937852070964428
+      },
+      "translation_error_mm": {
+        "mean": 5.89167247337017,
+        "sd": 4.568040125155513
+      },
+      "registration_only_seconds": {
+        "mean": 0.15214967387132458,
+        "sd": 0.019017643124383456
+      }
+    },
+    "all_refined": {
+      "virtual_target_rms_displacement_mm": {
+        "mean": 7.964045911196861,
+        "sd": 6.5010132596344175
+      },
+      "registration_recall": {
+        "mean": 0.7365079365079366,
+        "sd": 0.2060540765388602
+      },
+      "rotation_error_deg": {
+        "mean": 5.82665153143631,
+        "sd": 7.3073574789910065
+      },
+      "translation_error_mm": {
+        "mean": 6.566868797140707,
+        "sd": 4.84281837262006
+      },
+      "registration_only_seconds": {
+        "mean": 0.15191620149047275,
+        "sd": 0.017878033161400932
+      }
+    },
+    "random_policy": {
+      "virtual_target_rms_displacement_mm": {
+        "mean": 7.171157683604072,
+        "sd": 5.550045150046019
+      },
+      "registration_recall": {
+        "mean": 0.7571428571428572,
+        "sd": 0.2063501455787773
+      },
+      "rotation_error_deg": {
+        "mean": 5.723791077482959,
+        "sd": 7.108529411567648
+      },
+      "translation_error_mm": {
+        "mean": 5.772796017460983,
+        "sd": 4.352652064294604
+      },
+      "registration_only_seconds": {
+        "mean": 0.15063938514559552,
+        "sd": 0.016117673283170833
+      }
+    },
+    "geometry_policy": {
+      "virtual_target_rms_displacement_mm": {
+        "mean": 8.268926520954734,
+        "sd": 6.375681316756374
+      },
+      "registration_recall": {
+        "mean": 0.7269841269841271,
+        "sd": 0.2003659655393604
+      },
+      "rotation_error_deg": {
+        "mean": 6.2292815374164965,
+        "sd": 7.757425566414222
+      },
+      "translation_error_mm": {
+        "mean": 6.757143186963307,
+        "sd": 4.751774090349637
+      },
+      "registration_only_seconds": {
+        "mean": 0.1479298191189411,
+        "sd": 0.017771957637676798
+      }
+    },
+    "pfad_policy": {
+      "virtual_target_rms_displacement_mm": {
+        "mean": 6.434143755458913,
+        "sd": 4.744820507866221
+      },
+      "registration_recall": {
+        "mean": 0.7571428571428571,
+        "sd": 0.24536954484928825
+      },
+      "rotation_error_deg": {
+        "mean": 3.653384253139742,
+        "sd": 2.864910396718643
+      },
+      "translation_error_mm": {
+        "mean": 5.119171649621509,
+        "sd": 3.9124343975180733
+      },
+      "registration_only_seconds": {
+        "mean": 0.11966811065212823,
+        "sd": 0.02160733042943656
+      }
+    }
+  },
+  "comparisons": {
+    "raw": {
+      "virtual_target_rms_displacement_mm": {
+        "mean_gain_favoring_pfad": 0.849307223726783,
+        "gain_95ci": [
+          -0.26751386995437926,
+          2.2709358018394497
+        ],
+        "wilcoxon_two_sided_p": 0.3909912109375,
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "holm_p": 1.0,
+        "holm_family_size": 8
+      },
+      "registration_recall": {
+        "mean_gain_favoring_pfad": -2.4781763942525814e-19,
+        "gain_95ci": [
+          -0.049206349206349205,
+          0.06031746031746032
+        ],
+        "wilcoxon_two_sided_p": 0.7151127517202853,
+        "wins": 6,
+        "losses": 6,
+        "ties": 2,
+        "holm_p": 1.0,
+        "holm_family_size": 8
+      }
+    },
+    "all_refined": {
+      "virtual_target_rms_displacement_mm": {
+        "mean_gain_favoring_pfad": 1.529902155737949,
+        "gain_95ci": [
+          -0.10016186978307869,
+          3.4500312506763553
+        ],
+        "wilcoxon_two_sided_p": 0.3575439453125,
+        "wins": 8,
+        "losses": 6,
+        "ties": 0,
+        "holm_p": 1.0,
+        "holm_family_size": 8
+      },
+      "registration_recall": {
+        "mean_gain_favoring_pfad": 0.020634920634920638,
+        "gain_95ci": [
+          -0.04603174603174603,
+          0.09999999999999999
+        ],
+        "wilcoxon_two_sided_p": 0.8736306197171151,
+        "wins": 6,
+        "losses": 6,
+        "ties": 2,
+        "holm_p": 1.0,
+        "holm_family_size": 8
+      }
+    },
+    "random_policy": {
+      "virtual_target_rms_displacement_mm": {
+        "mean_gain_favoring_pfad": 0.7370139281451608,
+        "gain_95ci": [
+          -0.2516102055104636,
+          1.9899100507173413
+        ],
+        "wilcoxon_two_sided_p": 0.2957763671875,
+        "wins": 10,
+        "losses": 4,
+        "ties": 0,
+        "holm_p": 1.0,
+        "holm_family_size": 8
+      },
+      "registration_recall": {
+        "mean_gain_favoring_pfad": -2.4781763942525814e-19,
+        "gain_95ci": [
+          -0.050793650793650794,
+          0.060317460317460325
+        ],
+        "wilcoxon_two_sided_p": 0.7203427314161813,
+        "wins": 6,
+        "losses": 6,
+        "ties": 2,
+        "holm_p": 1.0,
+        "holm_family_size": 8
+      }
+    },
+    "geometry_policy": {
+      "virtual_target_rms_displacement_mm": {
+        "mean_gain_favoring_pfad": 1.8347827654958222,
+        "gain_95ci": [
+          0.27182120943221155,
+          3.678978981478716
+        ],
+        "wilcoxon_two_sided_p": 0.090576171875,
+        "wins": 9,
+        "losses": 5,
+        "ties": 0,
+        "holm_p": 0.724609375,
+        "holm_family_size": 8
+      },
+      "registration_recall": {
+        "mean_gain_favoring_pfad": 0.030158730158730163,
+        "gain_95ci": [
+          -0.0365079365079365,
+          0.10793650793650793
+        ],
+        "wilcoxon_two_sided_p": 0.5611816828593705,
+        "wins": 7,
+        "losses": 4,
+        "ties": 3,
+        "holm_p": 1.0,
+        "holm_family_size": 8
+      }
+    }
+  },
+  "specimen_values": {
+    "raw": {
+      "virtual_target_rms_displacement_mm": [
+        2.9014435958755183,
+        3.3001094068118513,
+        7.111888719217869,
+        5.34090114946353,
+        16.998322402782293,
+        9.930696114798012,
+        1.951558633344433,
+        2.618200586940182,
+        2.4153246515566984,
+        11.748886287315557,
+        4.312180323778009,
+        10.328481202552581,
+        20.158615750921964,
+        2.8517048832412364
+      ],
+      "registration_recall": [
+        0.9111111111111111,
+        0.9333333333333333,
+        0.5777777777777777,
+        0.8888888888888888,
+        0.6444444444444445,
+        0.6444444444444445,
+        1.0,
+        0.9777777777777777,
+        0.6666666666666666,
+        0.6444444444444445,
+        0.9111111111111111,
+        0.5555555555555556,
+        0.28888888888888886,
+        0.9555555555555556
+      ],
+      "rotation_error_deg": [
+        1.70105770773304,
+        2.5121927200800855,
+        5.6780358854908455,
+        5.38098194911809,
+        7.429387601269876,
+        27.33926221648193,
+        0.9642459894737624,
+        2.4032331724316385,
+        0.6689343418956389,
+        4.8531598364723765,
+        2.184856476677646,
+        3.5182808978063913,
+        11.701692324367542,
+        1.7005005648989566
+      ],
+      "translation_error_mm": [
+        1.9311878778845026,
+        2.895984650143731,
+        5.648769877601173,
+        3.844202820670867,
+        16.168269582390703,
+        9.578871010254959,
+        1.5001085744269151,
+        1.9953569038860142,
+        2.492775452832753,
+        11.112914353917047,
+        3.1525245140318714,
+        10.512212201113083,
+        9.066578334725309,
+        2.5836584733034442
+      ],
+      "registration_only_seconds": [
+        0.13617325853297693,
+        0.15396068202292856,
+        0.13491214955445482,
+        0.18701409077427036,
+        0.16110670024257465,
+        0.17153699731117944,
+        0.14879186884629436,
+        0.15335820491244603,
+        0.1282753698902929,
+        0.13868306231322802,
+        0.13129606549046002,
+        0.14178653933405358,
+        0.18594342764182428,
+        0.15725701733156003
+      ]
+    },
+    "all_refined": {
+      "virtual_target_rms_displacement_mm": [
+        3.0989573770309895,
+        2.643780931878671,
+        7.361054184808379,
+        5.453867291759913,
+        16.510061528145723,
+        9.953827797363196,
+        2.0651484167434146,
+        2.3498195438738296,
+        2.4626296966128964,
+        11.775989464895703,
+        4.277105427835555,
+        10.406129558255275,
+        24.78568214694519,
+        8.352589390607324
+      ],
+      "registration_recall": [
+        0.9111111111111111,
+        0.9555555555555556,
+        0.5777777777777777,
+        0.8888888888888888,
+        0.6222222222222222,
+        0.6444444444444445,
+        1.0,
+        0.9777777777777777,
+        0.6666666666666666,
+        0.6444444444444445,
+        0.9111111111111111,
+        0.6,
+        0.28888888888888886,
+        0.6222222222222222
+      ],
+      "rotation_error_deg": [
+        1.9363029263449023,
+        1.9459412161644989,
+        6.1767067886300495,
+        4.820272686534547,
+        7.27299471969053,
+        28.728289082975383,
+        0.8328708134277439,
+        2.59821710553275,
+        0.6620996534030278,
+        5.088735326014817,
+        2.0855152325659,
+        3.6138840954800098,
+        12.709058922281072,
+        3.1022328710631233
+      ],
+      "translation_error_mm": [
+        2.1196775629191387,
+        2.556835636902169,
+        5.933969917215922,
+        3.543904849101389,
+        15.738470096665855,
+        9.717219928703026,
+        1.5605593975516268,
+        1.6826952838485687,
+        2.560330120068262,
+        11.05916208814791,
+        3.132146697486314,
+        10.58721545925293,
+        13.634947882099576,
+        8.109028240007204
+      ],
+      "registration_only_seconds": [
+        0.16078445915546682,
+        0.14926410171255056,
+        0.15801886079781172,
+        0.17887698111072595,
+        0.15557209093110738,
+        0.1745306205806426,
+        0.138723823620886,
+        0.14877994946825007,
+        0.12237639606658679,
+        0.14458294031274918,
+        0.12979449897538872,
+        0.12800123759726476,
+        0.17331711060380459,
+        0.16420374993338352
+      ]
+    },
+    "random_policy": {
+      "virtual_target_rms_displacement_mm": [
+        3.1585802124551052,
+        3.1553404794205817,
+        7.210366958340605,
+        5.882375508409602,
+        16.736849552700566,
+        10.040187923105846,
+        2.1129431073252856,
+        1.9987824418924751,
+        2.4394363579226015,
+        10.8913696605825,
+        4.695739999660886,
+        9.869842376308432,
+        19.285419235896786,
+        2.918973756435754
+      ],
+      "registration_recall": [
+        0.9111111111111111,
+        0.9333333333333333,
+        0.5777777777777777,
+        0.8888888888888888,
+        0.6444444444444445,
+        0.6444444444444445,
+        1.0,
+        0.9777777777777777,
+        0.6666666666666666,
+        0.6444444444444445,
+        0.8666666666666667,
+        0.6,
+        0.28888888888888886,
+        0.9555555555555556
+      ],
+      "rotation_error_deg": [
+        2.116477200773551,
+        2.3245146740663114,
+        5.834669276874679,
+        5.764734080251575,
+        7.179924188649956,
+        28.261009136351944,
+        0.9666390487676524,
+        2.4479140463187874,
+        0.657217951571206,
+        4.655397387186063,
+        3.573421747270041,
+        2.999282513892845,
+        11.587326600476686,
+        1.7645472323101308
+      ],
+      "translation_error_mm": [
+        2.209209250965358,
+        2.6009707764145555,
+        5.755885335673974,
+        4.226022346527975,
+        15.939602918228296,
+        9.673187660888187,
+        1.5997295418081283,
+        1.4818979253306284,
+        2.509090026535241,
+        10.203126648446712,
+        3.8701975157316806,
+        10.051409103300402,
+        8.011387928417244,
+        2.6874272661853755
+      ],
+      "registration_only_seconds": [
+        0.12573668753353154,
+        0.15696322822542344,
+        0.15334614722394488,
+        0.1734882743091374,
+        0.16457878279745475,
+        0.16454659131381455,
+        0.15285722179752256,
+        0.1406644361339406,
+        0.11974967499845662,
+        0.13957616164439565,
+        0.14735441011273198,
+        0.1404216154200387,
+        0.1719305983311238,
+        0.15773756219682078
+      ]
+    },
+    "geometry_policy": {
+      "virtual_target_rms_displacement_mm": [
+        3.0989573770309895,
+        4.513419418491112,
+        7.361054184808379,
+        7.2882981936541436,
+        16.510061528145723,
+        10.518086945466747,
+        2.0651484167434146,
+        2.3498195438738296,
+        2.4626296966128964,
+        11.775989464895703,
+        4.277105427835555,
+        10.406129558255275,
+        24.78568214694519,
+        8.352589390607324
+      ],
+      "registration_recall": [
+        0.9111111111111111,
+        0.9111111111111111,
+        0.5777777777777777,
+        0.8222222222222222,
+        0.6222222222222222,
+        0.6222222222222222,
+        1.0,
+        0.9777777777777777,
+        0.6666666666666666,
+        0.6444444444444445,
+        0.9111111111111111,
+        0.6,
+        0.28888888888888886,
+        0.6222222222222222
+      ],
+      "rotation_error_deg": [
+        1.9363029263449023,
+        2.395764707393792,
+        6.1767067886300495,
+        8.132248015574698,
+        7.27299471969053,
+        30.60331034642854,
+        0.8328708134277439,
+        2.59821710553275,
+        0.6620996534030278,
+        5.088735326014817,
+        2.0855152325659,
+        3.6138840954800098,
+        12.709058922281072,
+        3.1022328710631233
+      ],
+      "translation_error_mm": [
+        2.1196775629191387,
+        3.8931107065146615,
+        5.933969917215922,
+        4.458248214583173,
+        15.738470096665855,
+        10.130442951125154,
+        1.5605593975516268,
+        1.6826952838485687,
+        2.560330120068262,
+        11.05916208814791,
+        3.132146697486314,
+        10.58721545925293,
+        13.634947882099576,
+        8.109028240007204
+      ],
+      "registration_only_seconds": [
+        0.16078445915546682,
+        0.12233675457925226,
+        0.15801886079781172,
+        0.1751002072912848,
+        0.15557209093110738,
+        0.14942538833193897,
+        0.138723823620886,
+        0.14877994946825007,
+        0.12237639606658679,
+        0.14458294031274918,
+        0.12979449897538872,
+        0.12800123759726476,
+        0.17331711060380459,
+        0.16420374993338352
+      ]
+    },
+    "pfad_policy": {
+      "virtual_target_rms_displacement_mm": [
+        3.6002644799298373,
+        4.554042866425692,
+        6.985046125817948,
+        5.826654132578892,
+        17.117958914839114,
+        8.152037828165671,
+        4.184184759206196,
+        1.8263825292981528,
+        2.3340233723642063,
+        3.949081182088671,
+        4.369035510908231,
+        9.341114126348586,
+        15.589720283989998,
+        2.2484664644635792
+      ],
+      "registration_recall": [
+        0.9111111111111111,
+        0.9111111111111111,
+        0.6,
+        0.8666666666666667,
+        0.6,
+        0.6666666666666666,
+        0.8666666666666667,
+        1.0,
+        0.6666666666666666,
+        0.9555555555555556,
+        0.9333333333333333,
+        0.5333333333333333,
+        0.1111111111111111,
+        0.9777777777777777
+      ],
+      "rotation_error_deg": [
+        2.001025031104277,
+        2.145699471229302,
+        4.273923062975051,
+        6.082691468967117,
+        7.00650485193453,
+        1.9492589199203882,
+        4.381164259440285,
+        1.4584315997177437,
+        0.624359366053702,
+        1.6673946863378928,
+        2.2935302559515223,
+        5.079838880601454,
+        10.94052321886248,
+        1.2430344708606371
+      ],
+      "translation_error_mm": [
+        2.6335143464288997,
+        3.979433557569138,
+        5.6848103024113685,
+        3.701162359071176,
+        16.103028223282916,
+        7.978883543851243,
+        3.238891827844172,
+        1.2015775066706802,
+        2.453575831211147,
+        3.6439701646593483,
+        3.0110170796517726,
+        9.057117195782203,
+        6.883965051242618,
+        2.097456105024446
+      ],
+      "registration_only_seconds": [
+        0.11997656788961548,
+        0.1111938479996752,
+        0.10284712199742595,
+        0.15417362664593384,
+        0.13294202384163833,
+        0.15403995438052032,
+        0.08359214311155179,
+        0.10852763653189564,
+        0.09752346497649948,
+        0.11517402650982451,
+        0.11270476728871776,
+        0.1204649262899895,
+        0.1525417137114952,
+        0.10965172795501227
+      ]
+    }
+  },
+  "by_anatomy_descriptive": {
+    "foot": {
+      "raw": {
+        "virtual_target_rms_displacement_mm": 5.680737827835168,
+        "registration_recall": 0.8857142857142857,
+        "rotation_error_deg": 3.4980385576848154,
+        "translation_error_mm": 3.025857624426947,
+        "registration_only_seconds": 0.11723828741399173
+      },
+      "all_refined": {
+        "virtual_target_rms_displacement_mm": 5.669839902627492,
+        "registration_recall": 0.8952380952380953,
+        "rotation_error_deg": 3.440534943453998,
+        "translation_error_mm": 3.0003381983276194,
+        "registration_only_seconds": 0.12461747927175436
+      },
+      "random_policy": {
+        "virtual_target_rms_displacement_mm": 5.817419057689943,
+        "registration_recall": 0.8952380952380953,
+        "rotation_error_deg": 3.513755665948006,
+        "translation_error_mm": 3.0755011724226353,
+        "registration_only_seconds": 0.12189488019544764
+      },
+      "geometry_policy": {
+        "virtual_target_rms_displacement_mm": 5.576581628712858,
+        "registration_recall": 0.9,
+        "rotation_error_deg": 3.398488382706731,
+        "translation_error_mm": 2.892291317924437,
+        "registration_only_seconds": 0.12065623385230234
+      },
+      "pfad_policy": {
+        "virtual_target_rms_displacement_mm": 5.029458595841619,
+        "registration_recall": 0.8857142857142857,
+        "rotation_error_deg": 3.424013983926391,
+        "translation_error_mm": 2.733645379022794,
+        "registration_only_seconds": 0.09554711522900367
+      }
+    },
+    "tibia": {
+      "raw": {
+        "virtual_target_rms_displacement_mm": 4.922429439222352,
+        "registration_recall": 0.8904761904761904,
+        "rotation_error_deg": 4.753294716305244,
+        "translation_error_mm": 3.432506196408272,
+        "registration_only_seconds": 0.1610465518660411
+      },
+      "all_refined": {
+        "virtual_target_rms_displacement_mm": 4.8767826366889295,
+        "registration_recall": 0.8904761904761904,
+        "rotation_error_deg": 4.495045244722038,
+        "translation_error_mm": 3.378380870918066,
+        "registration_only_seconds": 0.15626253831544004
+      },
+      "random_policy": {
+        "virtual_target_rms_displacement_mm": 4.963546957195241,
+        "registration_recall": 0.8904761904761904,
+        "rotation_error_deg": 4.750503718499608,
+        "translation_error_mm": 3.471628957963542,
+        "registration_only_seconds": 0.15765440749500634
+      },
+      "geometry_policy": {
+        "virtual_target_rms_displacement_mm": 5.997173869157259,
+        "registration_recall": 0.8523809523809524,
+        "rotation_error_deg": 5.6821367230185125,
+        "translation_error_mm": 4.171391998279003,
+        "registration_only_seconds": 0.15397708401100577
+      },
+      "pfad_policy": {
+        "virtual_target_rms_displacement_mm": 5.254959704212696,
+        "registration_recall": 0.8428571428571429,
+        "rotation_error_deg": 4.230732209299454,
+        "translation_error_mm": 3.6998277308470646,
+        "registration_only_seconds": 0.12095433175563812
+      }
+    },
+    "fibula": {
+      "raw": {
+        "virtual_target_rms_displacement_mm": 11.247185670499563,
+        "registration_recall": 0.49523809523809526,
+        "rotation_error_deg": 8.470628515480904,
+        "translation_error_mm": 11.216653599275292,
+        "registration_only_seconds": 0.1781641823339409
+      },
+      "all_refined": {
+        "virtual_target_rms_displacement_mm": 13.345515194274164,
+        "registration_recall": 0.4238095238095238,
+        "rotation_error_deg": 9.544374406132897,
+        "translation_error_mm": 13.321887322176432,
+        "registration_only_seconds": 0.1748685868842239
+      },
+      "random_policy": {
+        "virtual_target_rms_displacement_mm": 10.732507035927037,
+        "registration_recall": 0.4857142857142857,
+        "rotation_error_deg": 8.907113848001266,
+        "translation_error_mm": 10.77125792199677,
+        "registration_only_seconds": 0.17236886774633256
+      },
+      "geometry_policy": {
+        "virtual_target_rms_displacement_mm": 13.233024064994087,
+        "registration_recall": 0.42857142857142855,
+        "rotation_error_deg": 9.607219506524245,
+        "translation_error_mm": 13.207746244686478,
+        "registration_only_seconds": 0.16915613949351524
+      },
+      "pfad_policy": {
+        "virtual_target_rms_displacement_mm": 9.018012966322424,
+        "registration_recall": 0.5428571428571428,
+        "rotation_error_deg": 3.305406566193381,
+        "translation_error_mm": 8.924041838994667,
+        "registration_only_seconds": 0.1425028849717429
+      }
+    }
+  },
+  "by_start_descriptive": {
+    "aligned": {
+      "raw": {
+        "virtual_target_rms_displacement_mm": 5.653180356439527,
+        "registration_recall": 0.8095238095238095,
+        "rotation_error_deg": 2.400535275240695,
+        "translation_error_mm": 4.661344906971725,
+        "registration_only_seconds": 0.13835668814274305
+      },
+      "all_refined": {
+        "virtual_target_rms_displacement_mm": 6.410757420787741,
+        "registration_recall": 0.7857142857142857,
+        "rotation_error_deg": 2.6190578469751546,
+        "translation_error_mm": 5.417888760130755,
+        "registration_only_seconds": 0.13757353750129586
+      },
+      "random_policy": {
+        "virtual_target_rms_displacement_mm": 5.531940712421164,
+        "registration_recall": 0.8095238095238095,
+        "rotation_error_deg": 2.3799523505077205,
+        "translation_error_mm": 4.5372951030640385,
+        "registration_only_seconds": 0.13444588814413042
+      },
+      "geometry_policy": {
+        "virtual_target_rms_displacement_mm": 6.3795445611595465,
+        "registration_recall": 0.7857142857142857,
+        "rotation_error_deg": 2.61459029529954,
+        "translation_error_mm": 5.383158568771265,
+        "registration_only_seconds": 0.131782632312111
+      },
+      "pfad_policy": {
+        "virtual_target_rms_displacement_mm": 4.738223558699353,
+        "registration_recall": 0.8095238095238095,
+        "rotation_error_deg": 2.1888028218493147,
+        "translation_error_mm": 3.834931503379566,
+        "registration_only_seconds": 0.10728066069229196
+      }
+    },
+    "5deg_5mm": {
+      "raw": {
+        "virtual_target_rms_displacement_mm": 6.086658977984625,
+        "registration_recall": 0.8095238095238095,
+        "rotation_error_deg": 4.631380163017532,
+        "translation_error_mm": 5.0124785000174015,
+        "registration_only_seconds": 0.14132964882883242
+      },
+      "all_refined": {
+        "virtual_target_rms_displacement_mm": 6.690961063687157,
+        "registration_recall": 0.7857142857142857,
+        "rotation_error_deg": 4.97099805872735,
+        "translation_error_mm": 5.612027432395457,
+        "registration_only_seconds": 0.1412772473859756
+      },
+      "random_policy": {
+        "virtual_target_rms_displacement_mm": 5.795566525595536,
+        "registration_recall": 0.8095238095238095,
+        "rotation_error_deg": 4.663344366364062,
+        "translation_error_mm": 4.715724476047571,
+        "registration_only_seconds": 0.14017026690458545
+      },
+      "geometry_policy": {
+        "virtual_target_rms_displacement_mm": 6.650501108392149,
+        "registration_recall": 0.7857142857142857,
+        "rotation_error_deg": 5.004570729960294,
+        "translation_error_mm": 5.562846633798674,
+        "registration_only_seconds": 0.13678246875337902
+      },
+      "pfad_policy": {
+        "virtual_target_rms_displacement_mm": 5.084894335011027,
+        "registration_recall": 0.8047619047619048,
+        "rotation_error_deg": 2.5681631977425443,
+        "translation_error_mm": 4.16275215058677,
+        "registration_only_seconds": 0.10941301094329295
+      }
+    },
+    "10deg_10mm": {
+      "raw": {
+        "virtual_target_rms_displacement_mm": 7.40272031977123,
+        "registration_recall": 0.7666666666666667,
+        "rotation_error_deg": 5.605652891372082,
+        "translation_error_mm": 6.082613204870204,
+        "registration_only_seconds": 0.1514948382715894
+      },
+      "all_refined": {
+        "virtual_target_rms_displacement_mm": 8.197789349852817,
+        "registration_recall": 0.7428571428571429,
+        "rotation_error_deg": 5.9390936509112375,
+        "translation_error_mm": 6.872277375614548,
+        "registration_only_seconds": 0.15252659480001535
+      },
+      "random_policy": {
+        "virtual_target_rms_displacement_mm": 7.295900791668583,
+        "registration_recall": 0.7666666666666667,
+        "rotation_error_deg": 5.664442480635558,
+        "translation_error_mm": 5.9450896073207495,
+        "registration_only_seconds": 0.15144548990411705
+      },
+      "geometry_policy": {
+        "virtual_target_rms_displacement_mm": 8.26761041449238,
+        "registration_recall": 0.7380952380952381,
+        "rotation_error_deg": 6.16293994553266,
+        "translation_error_mm": 6.895539945058082,
+        "registration_only_seconds": 0.14730152152728157
+      },
+      "pfad_policy": {
+        "virtual_target_rms_displacement_mm": 6.19523252670084,
+        "registration_recall": 0.780952380952381,
+        "rotation_error_deg": 3.2056893054044613,
+        "translation_error_mm": 5.017964925019657,
+        "registration_only_seconds": 0.1180209932986015
+      }
+    },
+    "20deg_20mm": {
+      "raw": {
+        "virtual_target_rms_displacement_mm": 8.360973639801228,
+        "registration_recall": 0.6952380952380952,
+        "rotation_error_deg": 6.484928735081349,
+        "translation_error_mm": 6.579925715222904,
+        "registration_only_seconds": 0.16362453451355188
+      },
+      "all_refined": {
+        "virtual_target_rms_displacement_mm": 9.003387320050608,
+        "registration_recall": 0.680952380952381,
+        "rotation_error_deg": 6.569862884670347,
+        "translation_error_mm": 7.216301583412115,
+        "registration_only_seconds": 0.16194476228542737
+      },
+      "random_policy": {
+        "virtual_target_rms_displacement_mm": 8.4220057335481,
+        "registration_recall": 0.6952380952380952,
+        "rotation_error_deg": 6.843586385449257,
+        "translation_error_mm": 6.657573969014627,
+        "registration_only_seconds": 0.16030239862808404
+      },
+      "geometry_policy": {
+        "virtual_target_rms_displacement_mm": 9.888668039979672,
+        "registration_recall": 0.6571428571428571,
+        "rotation_error_deg": 7.520333936756536,
+        "translation_error_mm": 7.813042982033163,
+        "registration_only_seconds": 0.15970546707616276
+      },
+      "pfad_policy": {
+        "virtual_target_rms_displacement_mm": 8.022304404664872,
+        "registration_recall": 0.6857142857142857,
+        "rotation_error_deg": 5.1863002562722205,
+        "translation_error_mm": 6.176797873258099,
+        "registration_only_seconds": 0.13157032771449026
+      }
+    }
+  },
+  "case_sha256": {
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen01_foot.json": "02c5495bcf278bbbbf6be8ad11a4fbdeb4e48a318bee69064330ca4efa028fd4",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen01_tibia.json": "d6d0b42b07d9d93de32010be4a8dfb8ba75d9fcc9abbcaea16e2695e46c32749",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen01_fibula.json": "db65c99e552b75289beb3f17efeb938d297b22bfb1471fe77188ae6b374e506c",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen02_foot.json": "4294296474defd56d7d2c02826681f6a9f237454f4a261dde1f2effdd8354180",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen02_tibia.json": "5a7cc7f0d3b24b63886f7bbfb0875ef4977114164a6f976e4a3858016caffb72",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen02_fibula.json": "e303fb51b76117b0add630beabba20cb0023054efbf758894660d348ba033e77",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen03_foot.json": "7e9b34c909b66b4ec5e27186ef12f1cc002306ad93b7b04e8e93d885ae3e6258",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen03_tibia.json": "6b2823faa34680f670b1b85b2a8a43f4141258e230d718d994621bf63c492e8f",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen03_fibula.json": "665125119506c592250cc86cb38a1cdd313476886c3e94ff7a098865acb583f7",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen04_foot.json": "dfcf860b3a171dc890e5a04df91c21fe234134eff9d5c590f2ea0ebd563831d0",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen04_tibia.json": "166a91ebb3b2156fd41089b391c8a4778386c5450b162357637163ff3bd6d493",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen04_fibula.json": "70db6bb10ae7cf52cdfad059527413d798a6a2d9d144f62deb2ee692aba8afa8",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen05_foot.json": "cc64840dc49884c68918c82ab2915ba9d3681164e36a7709b5465ff7467e029c",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen05_tibia.json": "d4418d2a43ec55315999745ad7f6846bd687a3407fd76a95ae68de51429843a5",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen05_fibula.json": "9e9a380c6423ffb719e1d0b01db084c5f43cb99a80f89333dc192a7b8f17e34b",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen06_foot.json": "047d599e27654e1f428f1e5d42e3a7ceacaea872a0038537ddde92aeeadade7f",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen06_tibia.json": "50774fd97bce66c151a7e69d5fa2742dbe632112518dfc5efa47e83b536162e0",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen06_fibula.json": "0c45434876300c30677a3796b2c5f0d90fb2c789e71b34c5a9474655bcd94965",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen07_foot.json": "211a3dd76fdb4161ae186966f9ee20163dcbecc6942b8ef7a9216ecf6916390e",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen07_tibia.json": "584b025746456dec0bdd2a7af195ad51f2b653f8e24b240f93adb1d55320b0b7",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen07_fibula.json": "4437580e3f6a2f0e3a0c1cdfceca43f78eef8ac6d7d47631ab643c7b47b0e99c",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen08_foot.json": "79ba6eee497cbc01b0fcc681fc8b0a474aa7b673f808f652765f060ddb97f9cc",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen08_tibia.json": "36534fbf88843c257c1d36ffcef13266340df7cfb7ecc4bc641be2bd4dcd6303",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen08_fibula.json": "f0e163b219612a7a99cf5a86e0ed38002ad5d4b6a4979739c75ec6193b610bbf",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen09_foot.json": "8156dec99f1c31a7547438a89f585f62b976ed6919ff1f28b7bbcca46664eb2d",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen09_tibia.json": "a1486fc86df8441fbcb8df3ebe1610f37cbff54324ec282508fc2c73ce254824",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen09_fibula.json": "0b33dc14e4545769a9ae3d369e40d4b944fbc5fbbb92b84a5396f222608dec5d",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen10_foot.json": "ca805bc3c27ef45818457c5cc9c32a473d8c3c4f491056dcc92374932628cd2c",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen10_tibia.json": "733847e458e1a899dee44003fa456fceec379cfe54ae8a4591e9a933a53795c6",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen10_fibula.json": "7e405c90e99a4c00b93f48ea06b1f13a85c38d6ed0c3b43192e186390529cfec",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen11_foot.json": "6726436396f2f03c89630cdd5c3c9eb9aead146691ba00f438ee18f76a993030",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen11_tibia.json": "b868b0bbc77466574ec565e489349d3976f270dcdf49aa8afd850180a90eedf3",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen11_fibula.json": "399f197b4072297ac8f4f92cf5b3a1abe18108579e5f7d745cd82ca8bf1172fa",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen12_foot.json": "c669d21efb380db3b8d9e6e48b9c620807999544b65ccb67a3117ed085fd0c44",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen12_tibia.json": "831d87f4cba4d97fdf7d633702d31eeb9dfd9072c24c0372ba1b5fcf61b70127",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen12_fibula.json": "6d3225bd4ca32c054d78cdeaed5ce107490564d6330e06ac01a9931f6f2e86b1",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen13_foot.json": "bf14425a4d0f7df14ba8743907eea3c262202fc05fa72a7b7cb0842c1674a2e3",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen13_tibia.json": "5e857e5668065ecd6fe1cacc74f82f1786a056759d6f453343e90f3691f96117",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen13_fibula.json": "8525ddc89ae030533fda4f2744e753b8c99b2d7fda7a1a459c36b1b25f855a5d",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen14_foot.json": "b76043734ae262deee790f1f6944e6c03a67cad3067d78c7d17ba5e7ef050c21",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen14_tibia.json": "35ca068436cb738a734f3f686f697d65112a1e6d882ca75364b66860e797b865",
+    "artifacts/pfad_registration/nested_retention_v1/cases/specimen14_fibula.json": "4a044121ab85a74587fb5516684a55c2e7e0b256efde58477533735ace3fda1d"
+  },
+  "QA": {
+    "all_cases_complete": true,
+    "unique_paired_starts": true,
+    "transforms_finite_and_rigid": true,
+    "prediction_and_CT_hashes_unchanged": true,
+    "numerical_exceptions": 0,
+    "zero_final_fitness": 0,
+    "strict_inner_and_outer_membership": true,
+    "policy_input_and_output_hashes_verified": true
+  },
+  "selected_retentions": {
+    "specimen01": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen02": {
+      "random": 0.9,
+      "geometry": 0.9,
+      "pfad": 0.9
+    },
+    "specimen03": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen04": {
+      "random": 0.9,
+      "geometry": 0.9,
+      "pfad": 0.9
+    },
+    "specimen05": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen06": {
+      "random": 0.9,
+      "geometry": 0.9,
+      "pfad": 0.9
+    },
+    "specimen07": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.7
+    },
+    "specimen08": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen09": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen10": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen11": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen12": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen13": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    },
+    "specimen14": {
+      "random": 0.9,
+      "geometry": 1.0,
+      "pfad": 0.9
+    }
+  },
+  "design": "retrospective nested application-policy development; previously inspected cohort",
+  "inner_model_fits": 42
+}

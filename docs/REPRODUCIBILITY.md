@@ -77,3 +77,17 @@ python scripts/fetch_release.py results
 The compact result files in Git contain the complete aggregate and specimen values. The result release supplies the supporting case records. The plot script reproduces the single-column acquisition sensitivity figure from the stored summary. It does not retrain a model or select conditions.
 
 The reported clean means of PFAD and the Set Transformer are close. Their nonsignificant differences do not constitute an equivalence or noninferiority test. The repository retains the measured values and tested conditions rather than replacing unsuccessful comparisons with development results.
+
+## Registration-specific retention selection
+
+The separate retention study uses three inner folds to choose the retained fraction for the Huber registration objective. After preparing the cohort and running the registration workflow above:
+
+```bash
+python scripts/pilots/pfad_registration/train_inner_scores.py --device cuda
+python scripts/pilots/pfad_registration/run_nested_retention.py --stage controls
+python scripts/pilots/pfad_registration/run_nested_retention.py --stage inner
+python scripts/pilots/pfad_registration/run_nested_retention.py --stage outer
+python scripts/audits/pfad_registration_application/summarize_extensions.py --study nested
+```
+
+The frozen protocol is `configs/pfad/registration/nested_retention_v1.json`. The completed summary and paired trials are included as `paper_results/registration_policy_summary.json` and `registration_policy_trials.csv`. This experiment did not establish a stable additional registration benefit; its outcomes are retained as reported in the manuscript.

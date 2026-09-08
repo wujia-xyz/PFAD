@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use PFAD, please cite this software release."
 type: software
 title: "PFAD: Privileged First-Arrival Distillation for CT-Free Bone Surface Reconstruction From Tracked Ultrasound"
-version: 1.0.1
+version: 1.0.2
 date-released: 2026-09-08
 url: "https://github.com/wujia-xyz/PFAD"
 repository-code: "https://github.com/wujia-xyz/PFAD"
